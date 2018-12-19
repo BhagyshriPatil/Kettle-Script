@@ -1,0 +1,4 @@
+First reads data from delimited text files into a PDI transformation.
+Then load it into text output file with CSV extension.
+Given connection between to transform for output. And run the script and got below output.
+
