@@ -1,0 +1,49 @@
+Assignment 2:
+
+First need to load input csv file patient file to output file.
+
+Below is patient information-
+BoxNumber,Name,MRN,SxPathNumber,Gender,DOB,Ethnicity,Collection Date,Consent,Consent Date,Sample Type,Doctor,Zip,Comments.
+
+Required changes -
+1)BoxNumber-Need to ignore.
+2)Name - need to do Split into 2 fields First Name and Last Name.
+3)MRN - Need to do rename as Medical Record Number.
+4)SxPathNumber - Ignore.
+5)Gender - need to map as Mapped M-> Male, F-> Female.
+6)DOB  -Need to do rename as Date Of Birth.
+7)Ethnicity -Keep as it is
+8)Collection Date - Change the format to ‘MM-DD-YYYY’.
+9)Consent - Ignore.
+10)Consent Date -Ignore.
+12)Sample Type -Ignore.
+13)Doctor - Rename as Doctor Name
+14)Zip - Ignore.
+15) Patient unique it - Need to generate patient unique id as per patient.
+16) Cretae csv output file.
+
+
+Solution :
+
+Below are the more details about each transformation.
+
+1) csv file input - Using csv file input load data patient csv file.
+
+2)select values Transform  -Using select values tranform rename the fields and below are fields name.
+														1) Name:First Name and Last Name
+														2) DOB : Did as Date of Birth
+														3) Doctor: Doctor Name
+		
+3) split fields Transform - Using split field,split the fields base on requirement.
+
+4)Add Sequence Transform - Using add sequence transform created unique patientid
+
+5) Replacing in string - Using replacing in string change the gender value M replace with Male and F replace with Female.
+
+6) Text file output - Using text output file generated csv output file.
+
+
+Link - https://docs.google.com/document/d/1CzZgPCQEIcHPRNL8ifWq2i1XTjYCG7iCIoyDLknFkKI/edit#
+
+
+
